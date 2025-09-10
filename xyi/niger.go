@@ -1,7 +1,7 @@
-package xyi
+package main
 
 import "fmt"
 
-func xyi() {
+func main() {
 	fmt.Println("xyi")
 }
