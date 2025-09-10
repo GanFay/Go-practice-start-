@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abd08d35-3ddb-4936-8be9-184d684a18c6" name="Changes" comment="awd">
-      <change afterPath="$PROJECT_DIR$/factorial/factorial.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/factorial/factorial.go" beforeDir="false" afterPath="$PROJECT_DIR$/factorial/factorial.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

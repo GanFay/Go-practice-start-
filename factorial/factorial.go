@@ -5,10 +5,9 @@ import (
 )
 
 func main() {
-
 	start()
-
 }
+
 func start() {
 	fmt.Println("Введите число факториал которого хотите найти:")
 	var number uint
