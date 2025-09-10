@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abd08d35-3ddb-4936-8be9-184d684a18c6" name="Changes" comment="awd">
-      <change afterPath="$PROJECT_DIR$/training/training.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dodep/dodep.go" beforeDir="false" afterPath="$PROJECT_DIR$/dodep/dodep.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/factorial/factorial.go" beforeDir="false" afterPath="$PROJECT_DIR$/factorial/factorial.go" afterDir="false" />
@@ -54,6 +53,7 @@
     "DefaultGoTemplateProperty": "Go File",
     "Go Build.go build dodep.go.executor": "Run",
     "Go Build.go build factorial.go.executor": "Run",
+    "Go Build.go build max.min.go.executor": "Run",
     "Go Build.go build niger.go.executor": "Run",
     "Go Build.go build training.go.executor": "Run",
     "Go Build.go run main.go.executor": "Run",
@@ -95,14 +95,14 @@
             <map>
               <entry key="go build dodep.go" value="STOPPED" />
               <entry key="go build factorial.go" value="STOPPED" />
-              <entry key="go build training.go" value="STOPPED" />
+              <entry key="go build max.min.go" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build training.go">
+  <component name="RunManager" selected="Go Build.go build dodep.go">
     <configuration name="go build dodep.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-practice-start-" />
       <working_directory value="$PROJECT_DIR$" />
@@ -119,18 +119,23 @@
       <filePath value="$PROJECT_DIR$/factorial/factorial.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build training.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build max.min.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-practice-start-" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/training/training.go" />
+      <filePath value="$PROJECT_DIR$/max.min/max.min.go" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Go Build.go build max.min.go" />
+      <item itemvalue="Go Build.go build dodep.go" />
+      <item itemvalue="Go Build.go build factorial.go" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build training.go" />
         <item itemvalue="Go Build.go build dodep.go" />
+        <item itemvalue="Go Build.go build max.min.go" />
         <item itemvalue="Go Build.go build factorial.go" />
       </list>
     </recent_temporary>

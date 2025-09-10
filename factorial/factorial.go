@@ -11,11 +11,11 @@ func main() {
 func start() {
 	fmt.Println("Введите число факториал которого хотите найти:")
 	var number uint
-	scanln, err := fmt.Scanln(&number)
+	_, err := fmt.Scanln(&number)
 	if err != nil {
 		return
 	}
-	fmt.Println(factorial(uint(scanln)))
+	fmt.Println(factorial(number))
 	start()
 }
 
