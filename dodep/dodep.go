@@ -12,21 +12,21 @@ func main() {
 
 	Users := map[string]golan{}
 
-	Users["Maks"] = golan{
-		"Maks",
+	fmt.Println("Введите имя")
+	suck := ""
+	fmt.Scanln(&suck)
+
+	Users[suck] = golan{
+		suck,
 		0,
 		0,
 	}
-	fmt.Println(Users)
-
-	suck := ""
-	fmt.Scanln(&suck)
 
 	lol(Users, suck)
 }
 
 func lol(Users map[string]golan, suck string) {
-	fmt.Println("Какую операцию вы хотите зделать, CDE, CED")
+	fmt.Println("Какую операцию вы хотите зделать, CDE(Convert dollars to euro), CED(Convert euro to dollars), Dep")
 	var nig string
 	fmt.Scanln(&nig)
 
