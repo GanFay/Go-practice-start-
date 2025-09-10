@@ -11,26 +11,28 @@ type golan struct {
 	euro    float64
 }
 
+const rateDolToEur = 0.854
+const rateEurToDol = 1.17
+
 func main() {
 
-	Users := map[string]golan{}
+	Users := map[string]*golan{}
 
 	for {
-		fmt.Println("Какую операцию вы хотите зделать, CDE(Convert dollars to euro), CED(Convert euro to dollars), Dep, exit, add, list")
+		fmt.Println("Какую операцию вы хотите зделать: convert, dep, exit, add, list")
 		var nig string
-		fmt.Scanln(&nig)
+		_, err := fmt.Scanln(&nig)
+		if err != nil {
+			return
+		}
 		nig = strings.ToLower(nig)
 
 		switch nig {
 		case "add":
 			addUser(Users)
-		case "cde":
+		case "convert":
 			{
 				CDE(Users)
-			}
-		case "ced":
-			{
-				CED(Users)
 			}
 		case "dep":
 			{
@@ -52,7 +54,7 @@ func main() {
 	}
 }
 
-func listusers(Users map[string]golan) {
+func listusers(Users map[string]*golan) {
 	if len(Users) == 0 {
 		fmt.Println("Нет пользователей")
 		return
@@ -62,10 +64,13 @@ func listusers(Users map[string]golan) {
 	}
 }
 
-func DEP(Users map[string]golan) {
+func DEP(Users map[string]*golan) {
 	name := ""
 	fmt.Println("Имя пользователя: ")
-	fmt.Scanln(&name)
+	_, err := fmt.Scanln(&name)
+	if err != nil {
+		return
+	}
 	user, ok := Users[name]
 	if !ok {
 		fmt.Println("Пользователь не найден")
@@ -73,72 +78,61 @@ func DEP(Users map[string]golan) {
 	}
 	fmt.Println("dollars or euro")
 	ds := ""
-	_, err := fmt.Scanln(&ds)
+	_, err = fmt.Scanln(&ds)
 	if err != nil {
 		return
 	}
-	if ds == "dollars" {
-		fmt.Println("Сколько деп?")
-		depd := 0.0
-		_, err2 := fmt.Scanln(&depd)
-		if err2 != nil {
-			return
-		}
-		user.dollars += depd
-		fmt.Println("Депнуто:", depd)
-	} else if ds == "euro" {
-		fmt.Println("Сколько деп?")
-		depe := 0.0
-		_, err1 := fmt.Scanln(&depe)
-		if err1 != nil {
-			return
-		}
-		user.euro += depe
-		fmt.Println("Депнуто:", depe)
+	fmt.Println("Сколько деп?")
+	dep := 0.0
+	_, err = fmt.Scanln(&dep)
+	if err != nil {
+		return
 	}
-	Users[name] = user
+	if dep <= 0 {
+		fmt.Println("Сумма должна быть больше 0")
+		return
+	}
+
+	switch strings.ToLower(ds) {
+	case "dollars":
+		{
+			user.dollars += dep
+		}
+	case "euro":
+		{
+			user.euro += dep
+		}
+	default:
+		{
+			fmt.Println("error")
+			return
+		}
+	}
+
 	fmt.Printf("Ваш баланс: $%.2f, €%.2f\n", user.dollars, user.euro)
 }
 
-func addUser(Users map[string]golan) {
+func addUser(Users map[string]*golan) {
 	var name string
 	fmt.Println("Введите имя:")
-	fmt.Scanln(&name)
+	_, err := fmt.Scanln(&name)
+	if err != nil {
+		return
+	}
+	if name == " " {
+		fmt.Println("Имя не может быть пустым")
+		return
+	}
 	if _, ok := Users[name]; ok {
 		fmt.Println("Пользователь уже существует")
 		return
 	}
-	Users[name] = golan{name, 0, 0}
+	Users[name] = &golan{name, 0, 0}
 	fmt.Println("Пользователь добавлен:", name)
 	fmt.Println(Users[name])
 }
 
-func CDE(Users map[string]golan) {
-	name := ""
-	fmt.Print("Имя пользователя: ")
-	fmt.Scanln(&name)
-	user, ok := Users[name]
-	if !ok {
-		fmt.Println("Пользователь не найден")
-		return
-	}
-	fmt.Println("У вас долларов: ", user.dollars, "У вас евро:", user.euro)
-	fmt.Println("Сколько долларов переводим в евро")
-	dollars := 0.0
-	fmt.Scanln(&dollars)
-	if dollars > user.dollars {
-		fmt.Println("Недостаточно средств")
-		return
-	}
-	rate := 0.854
-	euro := rate * dollars
-	user.euro += euro
-	user.dollars -= dollars
-	Users[name] = user
-	fmt.Println("У вас евро: ", user.dollars, "У вас долларов:", user.euro)
-}
-
-func CED(Users map[string]golan) {
+func CDE(Users map[string]*golan) {
 	name := ""
 	fmt.Print("Имя пользователя: ")
 	_, err := fmt.Scanln(&name)
@@ -150,21 +144,53 @@ func CED(Users map[string]golan) {
 		fmt.Println("Пользователь не найден")
 		return
 	}
-	fmt.Println("У вас евро: ", user.dollars, "У вас долларов:", user.euro)
-	fmt.Println("Сколько евро переводим в доллари")
-	euro := 0.0
-	_, err1 := fmt.Scanln(&euro)
-	if err1 != nil {
+	fmt.Println("У вас долларов: ", user.dollars, "У вас евро:", user.euro)
+
+	fmt.Println("`dollartoeuro` or `eurotodollar`")
+	doloreur := ""
+	_, err = fmt.Scanln(&doloreur)
+	if err != nil {
 		return
 	}
-	if euro > user.euro {
-		fmt.Println("Недостаточно средств")
+	doloreur = strings.ToLower(doloreur)
+
+	summa := 0.0
+	fmt.Println("Сколько переводим?")
+	_, err = fmt.Scanln(&summa)
+	if err != nil {
 		return
 	}
-	rate := 1.17
-	dollars := rate * euro
-	user.dollars += dollars
-	user.euro -= euro
-	Users[name] = user
-	fmt.Println("У вас евро: ", user.dollars, "У вас долларов:", user.euro)
+
+	if summa <= 0 {
+		fmt.Println("Сумма должна быть больше 0")
+		return
+	}
+
+	switch doloreur {
+	case "dollartoeuro":
+		{
+			if summa > user.dollars {
+				fmt.Println("Недостаточно средств.")
+				return
+			}
+			user.euro += summa * rateDolToEur
+			user.dollars -= summa
+		}
+	case "eurotodollar":
+		{
+			if summa > user.euro {
+				fmt.Println("Недостаточно средств.")
+				return
+			}
+			user.dollars += summa * rateEurToDol
+			user.euro -= summa
+		}
+	default:
+		{
+			fmt.Println("error")
+			return
+		}
+	}
+
+	fmt.Printf("Новый баланс: $%.2f, €%.2f\n", user.dollars, user.euro)
 }
