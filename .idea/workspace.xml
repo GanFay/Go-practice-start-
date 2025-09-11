@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abd08d35-3ddb-4936-8be9-184d684a18c6" name="Changes" comment="awd">
+      <change afterPath="$PROJECT_DIR$/Task Tracker/Task Tracker.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training/training.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +51,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;Go Build.go build Task Tracker.go.executor&quot;: &quot;Run&quot;,
     &quot;Go Build.go build dodep.go.executor&quot;: &quot;Run&quot;,
     &quot;Go Build.go build factorial.go.executor&quot;: &quot;Run&quot;,
     &quot;Go Build.go build max.min.go.executor&quot;: &quot;Run&quot;,
@@ -91,6 +94,7 @@
         <entry key="GoApplicationRunConfiguration">
           <value>
             <map>
+              <entry key="go build Task Tracker.go" value="STOPPED" />
               <entry key="go build dodep.go" value="STOPPED" />
               <entry key="go build factorial.go" value="STOPPED" />
               <entry key="go build max.min.go" value="STOPPED" />
@@ -100,7 +104,15 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build dodep.go">
+  <component name="RunManager" selected="Go Build.go build Task Tracker.go">
+    <configuration name="go build Task Tracker.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Go-practice-start-" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Task Tracker/Task Tracker.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build dodep.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-practice-start-" />
       <working_directory value="$PROJECT_DIR$" />
@@ -126,12 +138,14 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Go Build.go build Task Tracker.go" />
       <item itemvalue="Go Build.go build max.min.go" />
       <item itemvalue="Go Build.go build dodep.go" />
       <item itemvalue="Go Build.go build factorial.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build Task Tracker.go" />
         <item itemvalue="Go Build.go build dodep.go" />
         <item itemvalue="Go Build.go build factorial.go" />
         <item itemvalue="Go Build.go build max.min.go" />
