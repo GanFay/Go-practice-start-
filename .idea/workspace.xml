@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abd08d35-3ddb-4936-8be9-184d684a18c6" name="Changes" comment="awd" />
+    <list default="true" id="abd08d35-3ddb-4936-8be9-184d684a18c6" name="Changes" comment="awd">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +100,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build factorial.go">
+  <component name="RunManager" selected="Go Build.go build dodep.go">
     <configuration name="go build dodep.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-practice-start-" />
       <working_directory value="$PROJECT_DIR$" />
@@ -130,8 +132,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build factorial.go" />
         <item itemvalue="Go Build.go build dodep.go" />
+        <item itemvalue="Go Build.go build factorial.go" />
         <item itemvalue="Go Build.go build max.min.go" />
       </list>
     </recent_temporary>
