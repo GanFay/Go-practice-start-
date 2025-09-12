@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abd08d35-3ddb-4936-8be9-184d684a18c6" name="Changes" comment="awd">
-      <change afterPath="$PROJECT_DIR$/Task Tracker/Task Tracker.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/training.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task Tracker/Task Tracker.go" beforeDir="false" afterPath="$PROJECT_DIR$/Task Tracker/Task Tracker.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +36,9 @@
     &quot;accountId&quot;: &quot;93cf0214-ee61-4100-9d49-ac06b9166c06&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Task Tracker/Task Tracker.go" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -52,6 +54,7 @@
   &quot;keyToString&quot;: {
     &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
     &quot;Go Build.go build Task Tracker.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build awdawd.go.executor&quot;: &quot;Run&quot;,
     &quot;Go Build.go build dodep.go.executor&quot;: &quot;Run&quot;,
     &quot;Go Build.go build factorial.go.executor&quot;: &quot;Run&quot;,
     &quot;Go Build.go build max.min.go.executor&quot;: &quot;Run&quot;,
@@ -95,6 +98,7 @@
           <value>
             <map>
               <entry key="go build Task Tracker.go" value="STOPPED" />
+              <entry key="go build awdawd.go" value="STOPPED" />
               <entry key="go build dodep.go" value="STOPPED" />
               <entry key="go build factorial.go" value="STOPPED" />
               <entry key="go build max.min.go" value="STOPPED" />
@@ -111,6 +115,14 @@
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/Task Tracker/Task Tracker.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build awdawd.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Go-practice-start-" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Task Tracker/awdawd.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build dodep.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -138,6 +150,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Go Build.go build awdawd.go" />
       <item itemvalue="Go Build.go build Task Tracker.go" />
       <item itemvalue="Go Build.go build max.min.go" />
       <item itemvalue="Go Build.go build dodep.go" />
@@ -146,6 +159,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build Task Tracker.go" />
+        <item itemvalue="Go Build.go build awdawd.go" />
         <item itemvalue="Go Build.go build dodep.go" />
         <item itemvalue="Go Build.go build factorial.go" />
         <item itemvalue="Go Build.go build max.min.go" />
@@ -155,8 +169,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-gosdk-f466f9b0953e-3d2cccfc42a2-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-252.23892.530" />
-        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-GO-252.23892.530" />
+        <option value="bundled-gosdk-f466f9b0953e-3d2cccfc42a2-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-252.25557.189" />
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-GO-252.25557.189" />
       </set>
     </attachedChunks>
   </component>

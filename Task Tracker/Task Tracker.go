@@ -28,12 +28,17 @@ func main() {
 	loadJSON(&tasks)
 	reader := bufio.NewReader(os.Stdin)
 	for {
-		fmt.Printf("Task tracker\n|\n┖Input command\n |\n ┖addtask, deltask, update, list, exit.\n")
-
+		fmt.Printf("\n\\/Task tracker|:=>\n|\n┖\\/Input command|:=>\n |\n ┖= addtask, deltask, update, list <todo || inprogress || done. Or nothing>, exit//.\n\n")
 		input, _ := reader.ReadString('\n')
 		choice := strings.TrimSpace(strings.ToLower(input))
 
-		switch choice {
+		parts := strings.Fields(choice)
+
+		if len(parts) == 0 {
+			continue
+		}
+
+		switch parts[0] {
 		case "addtask":
 			addTask(&tasks)
 		case "deltask":
@@ -41,7 +46,12 @@ func main() {
 		case "update":
 			updateField(&tasks)
 		case "list":
-			printTasks(tasks)
+			if len(parts) == 1 {
+				printTasks(tasks)
+			} else if len(parts) == 2 {
+				st := parts[1]
+				sort(tasks, Status(st))
+			}
 		default:
 			{
 				fmt.Println("error")
@@ -49,6 +59,19 @@ func main() {
 			}
 		}
 	}
+}
+
+func sort(tasks []*list, status Status) {
+	var curenttask []*list
+	for i := range tasks {
+		if tasks[i].Status == status {
+			curenttask = append(curenttask, tasks[i])
+			i++
+		} else {
+			i++
+		}
+	}
+	printTasks(curenttask)
 }
 
 func deltask(tasks *[]*list) {
