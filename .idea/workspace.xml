@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abd08d35-3ddb-4936-8be9-184d684a18c6" name="Changes" comment="awd">
-      <change beforePath="$PROJECT_DIR$/tasks.json" beforeDir="false" afterPath="$PROJECT_DIR$/tasks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task Tracker/Task Tracker.go" beforeDir="false" afterPath="$PROJECT_DIR$/roadmap/Task Tracker/Task Tracker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodep/dodep.go" beforeDir="false" afterPath="$PROJECT_DIR$/Training/dodep/dodep.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodep/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/Training/dodep/info.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/factorial/factorial.go" beforeDir="false" afterPath="$PROJECT_DIR$/Training/factorial/factorial.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/factorial/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/Training/factorial/info.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/max.min/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/Training/max.min/info.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/max.min/max.min.go" beforeDir="false" afterPath="$PROJECT_DIR$/Training/max.min/max.min.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,8 +157,8 @@
       <list>
         <item itemvalue="Go Build.go build Task Tracker.go" />
         <item itemvalue="Go Build.go build dodep.go" />
-        <item itemvalue="Go Build.go build factorial.go" />
         <item itemvalue="Go Build.go build max.min.go" />
+        <item itemvalue="Go Build.go build factorial.go" />
       </list>
     </recent_temporary>
   </component>
