@@ -5,6 +5,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"sort"
+	"strconv"
 	"strings"
 )
 
@@ -28,7 +30,7 @@ func main() {
 	loadJSON(&tasks)
 	reader := bufio.NewReader(os.Stdin)
 	for {
-		fmt.Printf("\n\\/Task tracker|:=>\n|\n┖\\/Input command|:=>\n |\n ┖= addtask, deltask, update, list <todo || inprogress || done. Or nothing>, exit//.\n\n")
+		fmt.Printf("\n\\/Task tracker|:=>\n|\n┖\\/Input command|:=>\n |\n ┖= addtask, deltask, update, sort\n |\n ┖= list <todo || inprogress || done. Or nothing>, exit.\n\n")
 		input, _ := reader.ReadString('\n')
 		choice := strings.TrimSpace(strings.ToLower(input))
 
@@ -50,18 +52,33 @@ func main() {
 				printTasks(tasks)
 			} else if len(parts) == 2 {
 				st := parts[1]
-				sort(tasks, Status(st))
+				changeStatus(tasks, Status(st))
 			}
+		case "exit":
+			{
+				fmt.Println("BB")
+				return
+			}
+		case "sort":
+			sortTasks(&tasks)
 		default:
 			{
 				fmt.Println("error")
-				return
 			}
 		}
 	}
 }
 
-func sort(tasks []*list, status Status) {
+func sortTasks(tasks *[]*list) {
+	sort.Slice(*tasks, func(i, j int) bool {
+		return (*tasks)[i].Id < (*tasks)[j].Id
+	})
+	fmt.Println("Sorted Tasks")
+	saveJSON(tasks)
+	fmt.Println("SavedJSON Tasks")
+}
+
+func changeStatus(tasks []*list, status Status) {
 	var curenttask []*list
 	for i := range tasks {
 		if tasks[i].Status == status {
@@ -84,34 +101,31 @@ func deltask(tasks *[]*list) {
 	var found bool
 	var task *list
 	deltask1 = strings.ToLower(deltask1)
-	if deltask1 == "id" {
-		fmt.Println("Input Id:")
-		id := 0
-		_, err = fmt.Scanln(&id)
-		if err != nil {
-			return
-		}
-		if task, found = findById(*tasks, id); found {
-			fmt.Printf("Нашёл! \nID: %d | Name: %s | Description: %s | Status: %s\n", task.Id, task.Name, task.Description, task.Status)
-		} else {
-			return
-		}
-	} else if deltask1 == "name" {
-		fmt.Println("Input Id:")
-		name := ""
-		_, err = fmt.Scanln(&name)
-		if err != nil {
-			return
-		}
-		if task, found = findByName(*tasks, name); found {
-
-			fmt.Printf("Нашёл! \nID: %d | Name: %s | Description: %s | Status: %s\n", task.Id, task.Name, task.Description, task.Status)
-
-		} else {
-			return
-		}
+	if task, found = findById(*tasks, deltask1); found {
+		fmt.Printf("Found! \nID: %d | Name: %s | Description: %s | Status: %s\n", task.Id, task.Name, task.Description, task.Status)
+	} else if task, found = findByName(*tasks, deltask1); found {
+		fmt.Printf("Found! \nID: %d | Name: %s | Description: %s | Status: %s\n", task.Id, task.Name, task.Description, task.Status)
 	} else {
-		fmt.Println("Invaild")
+		fmt.Println("Not Found")
+		return
+	}
+
+	nig := ""
+	fmt.Println("U sure want to delete this task")
+	fmt.Scanln(&nig)
+	switch nig {
+	case "no":
+		{
+			deltask(tasks)
+		}
+	case "-":
+		{
+			deltask(tasks)
+		}
+	case "false":
+		{
+			deltask(tasks)
+		}
 	}
 
 	var newTasks []*list
@@ -123,11 +137,13 @@ func deltask(tasks *[]*list) {
 	}
 	*tasks = newTasks
 	saveJSON(tasks)
+	fmt.Println("Delete Task Success")
+	sortTasks(tasks)
 }
 
-func findById(tasks []*list, id int) (*list, bool) {
+func findById(tasks []*list, id string) (*list, bool) {
 	for i := range tasks {
-		if tasks[i].Id == id {
+		if strconv.Itoa(tasks[i].Id) == id {
 			return tasks[i], true
 		}
 	}
@@ -144,7 +160,7 @@ func findByName(tasks []*list, name string) (*list, bool) {
 }
 
 func updateField(tasks *[]*list) {
-	fmt.Println("ID or Name")
+	fmt.Println("Input ID or Name")
 
 	choice := ""
 
@@ -155,36 +171,16 @@ func updateField(tasks *[]*list) {
 	choice = strings.ToLower(choice)
 	var task *list
 	var found bool
-	if choice == "id" {
-		fmt.Println("Input Id")
-		id := 0
-		_, err = fmt.Scanln(&id)
-		if err != nil {
-			return
-		}
-		if task, found = findById(*tasks, id); found {
-			fmt.Printf("Нашёл! \nID: %d | Name: %s | Description: %s | Status: %s\n", task.Id, task.Name, task.Description, task.Status)
-		} else {
-			fmt.Println("Not found")
-		}
-	} else if choice == "name" {
-		fmt.Println("Input name")
-		name := ""
-		_, err = fmt.Scanln(&name)
-		if err != nil {
-			return
-		}
-		name = strings.ToLower(name)
-		if task, found = findByName(*tasks, name); found {
-			fmt.Printf("Нашёл! \nID: %d | Name: %s | Description: %s | Status: %s\n", task.Id, task.Name, task.Description, task.Status)
-		} else {
-			fmt.Println("Не найдено")
-		}
+
+	if task, found = findById(*tasks, choice); found {
+		fmt.Printf("Found! \nID: %d | Name: %s | Description: %s | Status: %s\n", task.Id, task.Name, task.Description, task.Status)
+	} else if task, found = findByName(*tasks, choice); found {
+		fmt.Printf("Found! \nID: %d | Name: %s | Description: %s | Status: %s\n", task.Id, task.Name, task.Description, task.Status)
 	} else {
-		fmt.Println("error")
+		fmt.Println("Not Found")
 		return
 	}
-	fmt.Println("Введите на какой вы статус хотите поменять(todo, inprogress, done):")
+	fmt.Println("Input task status (todo, inprogress, done):")
 	status := ""
 	_, err = fmt.Scanln(&status)
 	if err != nil {
@@ -203,11 +199,6 @@ func updateField(tasks *[]*list) {
 		{
 			task.Status = Done
 		}
-	case "exit":
-		{
-			fmt.Println("BB")
-			return
-		}
 	default:
 		{
 			fmt.Println("Unknown command. Error")
@@ -215,7 +206,7 @@ func updateField(tasks *[]*list) {
 		}
 	}
 	saveJSON(tasks)
-	fmt.Println("Задача обновлена и сохранена в файл.")
+	fmt.Println("Task updated and save successfully.")
 }
 
 func addTask(tasks *[]*list) {
@@ -230,6 +221,13 @@ func addTask(tasks *[]*list) {
 	reader := bufio.NewReader(os.Stdin)
 	input, _ := reader.ReadString('\n')
 	choice := strings.TrimSpace(strings.ToLower(input))
+
+	for _, pid := range *tasks {
+		if pid.Name == scrp {
+			fmt.Println("Input name error (name already exists)!")
+			return
+		}
+	}
 
 	newID := 0
 	for {
@@ -246,8 +244,10 @@ func addTask(tasks *[]*list) {
 		}
 	}
 
+	fmt.Println("Task added!")
 	*tasks = append(*tasks, &list{Name: scrp, Description: choice, Id: newID, Status: Todo})
 	saveJSON(tasks)
+	sortTasks(tasks)
 }
 
 func printTasks(tasks []*list) {
