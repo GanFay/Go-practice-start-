@@ -112,7 +112,10 @@ func deltask(tasks *[]*list) {
 
 	nig := ""
 	fmt.Println("U sure want to delete this task")
-	fmt.Scanln(&nig)
+	_, err = fmt.Scanln(&nig)
+	if err != nil {
+		return
+	}
 	switch nig {
 	case "no":
 		{
