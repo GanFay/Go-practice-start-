@@ -112,7 +112,10 @@ func deltask(tasks *[]*list) {
 
 	nig := ""
 	fmt.Println("U sure want to delete this task")
-	fmt.Scanln(&nig)
+	_, err = fmt.Scanln(&nig)
+	if err != nil {
+		return
+	}
 	switch nig {
 	case "no":
 		{
@@ -295,7 +298,7 @@ func saveJSON(tasks *[]*list) {
 		return
 	}
 	defer func(file *os.File) {
-		err := file.Close()
+		err = file.Close()
 		if err != nil {
 
 		}
