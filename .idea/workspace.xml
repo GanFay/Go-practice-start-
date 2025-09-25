@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abd08d35-3ddb-4936-8be9-184d684a18c6" name="Changes" comment="awd">
+      <change afterPath="$PROJECT_DIR$/Training/training/CLI.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Training/training/tv1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roadmap/Num-Gues-Game/Number Guessing Game.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roadmap/Num-Gues-Game/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +36,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/GanFay/Go-practice-start-.git&quot;,
-    &quot;accountId&quot;: &quot;3732faec-1c3b-4081-8055-3ec05329cfb1&quot;
+    &quot;accountId&quot;: &quot;93cf0214-ee61-4100-9d49-ac06b9166c06&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
@@ -52,14 +56,15 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;Go Build.go build CLI.go.executor&quot;: &quot;Run&quot;,
     &quot;Go Build.go build Task Tracker CLI.go.executor&quot;: &quot;Run&quot;,
     &quot;Go Build.go build Task Tracker.go.executor&quot;: &quot;Run&quot;,
     &quot;Go Build.go build awdawd.go.executor&quot;: &quot;Run&quot;,
     &quot;Go Build.go build dodep.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build factorial.go (1).executor&quot;: &quot;Run&quot;,
     &quot;Go Build.go build factorial.go.executor&quot;: &quot;Run&quot;,
     &quot;Go Build.go build max.min.go.executor&quot;: &quot;Run&quot;,
     &quot;Go Build.go build niger.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build train.go.executor&quot;: &quot;Run&quot;,
     &quot;Go Build.go build training.go.executor&quot;: &quot;Run&quot;,
     &quot;Go Build.go run main.go.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
@@ -76,7 +81,7 @@
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/abese/GolandProjects/Go-practice-start-&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/macsb/GolandProjects/Go-practice-start-&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
@@ -85,6 +90,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\macsb\GolandProjects\Go-practice-start-\roadmap\Num-Gues-Game" />
       <recent name="C:\Users\macsb\GolandProjects\Go-practice-start-\dodep" />
     </key>
   </component>
@@ -99,25 +105,50 @@
         <entry key="GoApplicationRunConfiguration">
           <value>
             <map>
-              <entry key="go build Task Tracker.go" value="STOPPED" />
+              <entry key="go build CLI.go" value="STOPPED" />
+              <entry key="go build dodep.go" value="STOPPED" />
+              <entry key="go build train.go" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="go build Task Tracker.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build train.go">
+    <configuration name="go build CLI.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-practice-start-" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/roadmap/Task Tracker/Task Tracker.go" />
+      <filePath value="$PROJECT_DIR$/Training/training/CLI.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build dodep.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Go-practice-start-" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Training/dodep/dodep.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build train.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Go-practice-start-" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Training/training/train.go" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build train.go" />
+      <item itemvalue="Go Build.go build CLI.go" />
+      <item itemvalue="Go Build.go build dodep.go" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build Task Tracker.go" />
+        <item itemvalue="Go Build.go build train.go" />
+        <item itemvalue="Go Build.go build dodep.go" />
+        <item itemvalue="Go Build.go build CLI.go" />
       </list>
     </recent_temporary>
   </component>
