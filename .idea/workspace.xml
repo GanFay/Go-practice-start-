@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abd08d35-3ddb-4936-8be9-184d684a18c6" name="Changes" comment="awd">
-      <change afterPath="$PROJECT_DIR$/Training/training/CLI.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Training/training/tv1.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/roadmap/Num-Gues-Game/Number Guessing Game.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/roadmap/Num-Gues-Game/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="abd08d35-3ddb-4936-8be9-184d684a18c6" name="Changes" comment="awd" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
