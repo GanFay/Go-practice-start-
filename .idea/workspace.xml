@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abd08d35-3ddb-4936-8be9-184d684a18c6" name="Changes" comment="awd">
-      <change afterPath="$PROJECT_DIR$/olimpiada/CASIK23DAVAI.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/olimpiada/CASIK23DAVAI.go" beforeDir="false" afterPath="$PROJECT_DIR$/olimpiada/CASIK23DAVAI.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +41,14 @@
     <setting file="file://$PROJECT_DIR$/Task Tracker/Task Tracker.go" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
+    <hideBySeverity>
+      <option value="11" />
+      <option value="12" />
+      <option value="13" />
+      <option value="14" />
+      <option value="15" />
+      <option value="16" />
+    </hideBySeverity>
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
@@ -113,6 +121,7 @@
               <entry key="go build CASIK23DAVAI.go" value="STOPPED" />
               <entry key="go build Number Guessing Game.go" value="STOPPED" />
               <entry key="go build awd.go" value="STOPPED" />
+              <entry key="go build max.min.go" value="STOPPED" />
               <entry key="go build xyi.go" value="STOPPED" />
             </map>
           </value>
@@ -145,6 +154,14 @@
       <filePath value="$PROJECT_DIR$/Training/training/awd.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build max.min.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Go-practice-start-" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Training/max.min/max.min.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build xyi.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-practice-start-" />
       <working_directory value="$PROJECT_DIR$" />
@@ -155,6 +172,7 @@
     </configuration>
     <list>
       <item itemvalue="Go Build.go build CASIK23DAVAI.go" />
+      <item itemvalue="Go Build.go build max.min.go" />
       <item itemvalue="Go Build.go build xyi.go" />
       <item itemvalue="Go Build.go build Number Guessing Game.go" />
       <item itemvalue="Go Build.go build awd.go" />
@@ -162,6 +180,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build CASIK23DAVAI.go" />
+        <item itemvalue="Go Build.go build max.min.go" />
         <item itemvalue="Go Build.go build Number Guessing Game.go" />
         <item itemvalue="Go Build.go build xyi.go" />
         <item itemvalue="Go Build.go build awd.go" />
@@ -188,6 +207,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="awd" />
