@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abd08d35-3ddb-4936-8be9-184d684a18c6" name="Changes" comment="awd" />
+    <list default="true" id="abd08d35-3ddb-4936-8be9-184d684a18c6" name="Changes" comment="awd">
+      <change afterPath="$PROJECT_DIR$/olimpiada/CASIK23DAVAI.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +16,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="Go File" />
       </list>
     </option>
@@ -47,41 +51,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;Go Build.go build CLI.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build Task Tracker CLI.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build Task Tracker.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build awdawd.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build dodep.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build factorial.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build max.min.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build niger.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build train.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build training.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go run main.go.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.GoLinterPluginOnboarding&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.GoLinterPluginStorageMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/macsb/GolandProjects/Go-practice-start-&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build CASIK23DAVAI.go.executor": "Run",
+    "Go Build.go build CLI.go.executor": "Run",
+    "Go Build.go build Number Guessing Game.go.executor": "Run",
+    "Go Build.go build Task Tracker CLI.go.executor": "Run",
+    "Go Build.go build Task Tracker.go.executor": "Run",
+    "Go Build.go build Task-Tracker.go.executor": "Run",
+    "Go Build.go build awd.go.executor": "Run",
+    "Go Build.go build awdawd.go.executor": "Run",
+    "Go Build.go build dodep.go.executor": "Run",
+    "Go Build.go build factorial.go.executor": "Run",
+    "Go Build.go build max.min.go.executor": "Run",
+    "Go Build.go build nchisla.go.executor": "Run",
+    "Go Build.go build niger.go.executor": "Run",
+    "Go Build.go build train.go.executor": "Run",
+    "Go Build.go build training.go.executor": "Run",
+    "Go Build.go build tv1.go.executor": "Run",
+    "Go Build.go build xyi.go.executor": "Run",
+    "Go Build.go run main.go.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.GoLinterPluginOnboarding": "true",
+    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/macsb/GolandProjects/Go-practice-start-",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\macsb\GolandProjects\Go-practice-start-\roadmap\Num-Gues-Game" />
@@ -99,50 +110,61 @@
         <entry key="GoApplicationRunConfiguration">
           <value>
             <map>
-              <entry key="go build CLI.go" value="STOPPED" />
-              <entry key="go build dodep.go" value="STOPPED" />
-              <entry key="go build train.go" value="STOPPED" />
+              <entry key="go build CASIK23DAVAI.go" value="STOPPED" />
+              <entry key="go build Number Guessing Game.go" value="STOPPED" />
+              <entry key="go build awd.go" value="STOPPED" />
+              <entry key="go build xyi.go" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build train.go">
-    <configuration name="go build CLI.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build CASIK23DAVAI.go">
+    <configuration name="go build CASIK23DAVAI.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-practice-start-" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Training/training/CLI.go" />
+      <filePath value="$PROJECT_DIR$/olimpiada/CASIK23DAVAI.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build dodep.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build Number Guessing Game.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-practice-start-" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Training/dodep/dodep.go" />
+      <filePath value="$PROJECT_DIR$/roadmap/Num-Gues-Game/Number Guessing Game.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build train.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build awd.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-practice-start-" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Training/training/train.go" />
+      <filePath value="$PROJECT_DIR$/Training/training/awd.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build xyi.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Go-practice-start-" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/olimpiada/xyi.go" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build train.go" />
-      <item itemvalue="Go Build.go build CLI.go" />
-      <item itemvalue="Go Build.go build dodep.go" />
+      <item itemvalue="Go Build.go build CASIK23DAVAI.go" />
+      <item itemvalue="Go Build.go build xyi.go" />
+      <item itemvalue="Go Build.go build Number Guessing Game.go" />
+      <item itemvalue="Go Build.go build awd.go" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build train.go" />
-        <item itemvalue="Go Build.go build dodep.go" />
-        <item itemvalue="Go Build.go build CLI.go" />
+        <item itemvalue="Go Build.go build CASIK23DAVAI.go" />
+        <item itemvalue="Go Build.go build Number Guessing Game.go" />
+        <item itemvalue="Go Build.go build xyi.go" />
+        <item itemvalue="Go Build.go build awd.go" />
       </list>
     </recent_temporary>
   </component>
