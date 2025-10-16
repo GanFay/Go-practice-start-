@@ -70,6 +70,7 @@
     "Go Build.go build Task-Tracker.go.executor": "Run",
     "Go Build.go build awd.go.executor": "Run",
     "Go Build.go build awdawd.go.executor": "Run",
+    "Go Build.go build d.go.executor": "Run",
     "Go Build.go build dodep.go.executor": "Run",
     "Go Build.go build factorial.go.executor": "Run",
     "Go Build.go build max.min.go.executor": "Run",
@@ -120,7 +121,7 @@
             <map>
               <entry key="go build CASIK23DAVAI.go" value="STOPPED" />
               <entry key="go build Number Guessing Game.go" value="STOPPED" />
-              <entry key="go build awd.go" value="STOPPED" />
+              <entry key="go build d.go" value="STOPPED" />
               <entry key="go build max.min.go" value="STOPPED" />
               <entry key="go build xyi.go" value="STOPPED" />
             </map>
@@ -129,7 +130,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build CASIK23DAVAI.go">
+  <component name="RunManager" selected="Go Build.go build d.go">
     <configuration name="go build CASIK23DAVAI.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-practice-start-" />
       <working_directory value="$PROJECT_DIR$" />
@@ -146,12 +147,12 @@
       <filePath value="$PROJECT_DIR$/roadmap/Num-Gues-Game/Number Guessing Game.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build awd.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build d.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-practice-start-" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Training/training/awd.go" />
+      <filePath value="$PROJECT_DIR$/Training/training/d.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build max.min.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -171,19 +172,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Go Build.go build d.go" />
       <item itemvalue="Go Build.go build CASIK23DAVAI.go" />
       <item itemvalue="Go Build.go build max.min.go" />
       <item itemvalue="Go Build.go build xyi.go" />
       <item itemvalue="Go Build.go build Number Guessing Game.go" />
-      <item itemvalue="Go Build.go build awd.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build d.go" />
         <item itemvalue="Go Build.go build CASIK23DAVAI.go" />
         <item itemvalue="Go Build.go build max.min.go" />
         <item itemvalue="Go Build.go build Number Guessing Game.go" />
         <item itemvalue="Go Build.go build xyi.go" />
-        <item itemvalue="Go Build.go build awd.go" />
       </list>
     </recent_temporary>
   </component>
